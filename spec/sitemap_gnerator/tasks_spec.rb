@@ -1,3 +1,6 @@
 require 'spec_helper'
 
-debugger
+describe "creating sitemaps using rake" do
+
+end
+
