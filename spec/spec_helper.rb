@@ -5,6 +5,8 @@ load(File.expand_path(File.join(File.dirname(__FILE__), '../', 'Rakefile')))
 # in ./support/ and its subdirectories.
 Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].each {|f| require f}
 
+require 'sitemap_generator'
+
 RSpec.configure do |config|
   config.mock_with :mocha
   config.include(FileMacros)
