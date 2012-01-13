@@ -30,9 +30,9 @@ describe "SitemapGenerator" do
     end
   end
 
-  describe "root" do
-    it "should be set to the root of the gem" do
-      SitemapGenerator.root.should == File.expand_path('../../../' , __FILE__)
+  describe "app root" do
+    it "should be set to the Rails root" do
+      SitemapGenerator.app.root.to_s.should == Rails.root.to_s
     end
   end
 
@@ -70,7 +70,7 @@ describe "SitemapGenerator" do
     end
 
     it "should not overwrite config/sitemap.rb" do
-      sitemap_file = File.join(SitemapGenerator.root, 'spec/files/sitemap.deprecated.rb')
+      sitemap_file = File.join(this_root, 'spec/files/sitemap.deprecated.rb')
       files_should_be_identical(sitemap_file, rails_path('config/sitemap.rb'))
     end
   end
@@ -231,12 +231,16 @@ describe "SitemapGenerator" do
   # Helpers
   #
 
+  def this_root
+    @this_root ||= File.expand_path(File.join(File.dirname(__FILE__), '../../'))
+  end
+
   def rails_path(file)
     SitemapGenerator.app.root + file
   end
 
   def copy_sitemap_file_to_rails_app(extension)
-    FileUtils.cp(File.join(SitemapGenerator.root, "spec/files/sitemap.#{extension}.rb"), SitemapGenerator.app.root + 'config/sitemap.rb')
+    FileUtils.cp(File.join(this_root, "spec/files/sitemap.#{extension}.rb"), SitemapGenerator.app.root + 'config/sitemap.rb')
   end
 
   def delete_sitemap_file_from_rails_app
