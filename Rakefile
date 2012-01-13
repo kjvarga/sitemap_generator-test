@@ -1,17 +1,15 @@
-# Add your own tasks in files placed in lib/tasks ending in .rake,
-# for example lib/tasks/capistrano.rake, and they will automatically be available to Rake.
-
 require(File.join(File.dirname(__FILE__), 'config', 'boot'))
 
-require 'rake'
-require 'rake/testtask'
-require 'rake/rdoctask'
-require 'tasks/rails'
-require 'spec/rake/spectask'
-require 'sitemap_generator/tasks'
+require 'rake/testtask' # Needed for
+require 'rake/rdoctask' # tasks/rails
+require 'tasks/rails' 
+require 'sitemap_generator/tasks'  
 
-desc "Run all specs for a specific rails version"
-Spec::Rake::SpecTask.new() do |t|
-  t.spec_opts = ['--options', "\"spec.opts\""]
-  t.spec_files = FileList['../sitemap_generator/**/*_spec.rb']
+desc 'Default: run spec tests.'
+task :default => :spec
+
+require "rspec/core/rake_task"
+RSpec::Core::RakeTask.new(:spec) do |spec|
+  spec.pattern = Dir.glob(['spec/sitemap_generator/**/*'])
+  spec.rspec_opts = ['--backtrace']
 end
