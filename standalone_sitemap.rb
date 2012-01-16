@@ -1,5 +1,5 @@
-require 'rubygems'
-require 'sitemap_generator'
+require 'bundler/setup'
+Bundler.require
 
 SitemapGenerator::Sitemap.verbose = true
 SitemapGenerator::Sitemap.default_host = 'http://example.com'
