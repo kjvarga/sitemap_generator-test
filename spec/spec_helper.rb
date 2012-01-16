@@ -1,14 +1,17 @@
 require 'bundler/setup'
 Bundler.require
 
+require 'rake'
+require 'sitemap_generator/tasks'
+
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
 Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].each {|f| require f}
 
-RSpec.configure do |config| 
+RSpec.configure do |config|
   config.include(FileMacros)
   config.include(XmlMacros)
-end  
+end
 
 module Helpers
   extend self

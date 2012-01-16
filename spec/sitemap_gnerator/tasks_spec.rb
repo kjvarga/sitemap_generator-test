@@ -32,7 +32,7 @@ describe "SitemapGenerator" do
 
   describe "app root" do
     it "should be set to the Rails root" do
-      SitemapGenerator.app.root.to_s.should == Rails.root.to_s
+      SitemapGenerator.app.root.to_s.should == File.expand_path(File.join(File.dirname(__FILE__), '../../'))
     end
   end
 
@@ -204,24 +204,6 @@ describe "SitemapGenerator" do
 
       file_should_exist(rails_path('public/sitemaps/deep/directory/sitemap_index.xml.gz'))
       file_should_exist(rails_path('public/sitemaps/deep/directory/sitemap1.xml.gz'))
-    end
-  end
-
-  describe "external dependencies" do
-    describe "rails" do
-      before :each do
-        @rails = Rails
-        Object.send(:remove_const, :Rails)
-      end
-
-      after :each do
-        Object::Rails = @rails
-      end
-
-      it "should work outside of Rails" do
-        defined?(Rails).should be_nil
-        lambda { ::SitemapGenerator::LinkSet.new }.should_not raise_exception
-      end
     end
   end
 
