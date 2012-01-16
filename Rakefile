@@ -1,7 +1,7 @@
 require 'bundler/setup' 
 Bundler.require
-Combustion.initialize!
-Combustion::Application.load_tasks
+
+require 'sitemap_generator/tasks'
 
 desc 'Default: run spec tests.'
 task :default => :spec

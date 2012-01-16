@@ -1,11 +1,11 @@
 SitemapGenerator::Sitemap.default_host = "http://www.example.com"
 
 SitemapGenerator::Sitemap.create do
-  add contents_path, :priority => 0.7, :changefreq => 'daily'
+  add '/contents', :priority => 0.7, :changefreq => 'daily'
 
   # add all individual articles
-  Content.find(:all).each do |c|
-    add content_path(c), :lastmod => c.updated_at
+  (1..10).each do |i|
+    add "/content/#{i}"
   end
 
   add "/merchant_path", :host => "https://www.example.com"
