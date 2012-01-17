@@ -8,9 +8,9 @@ end
 
 def with_max_links(num)
   original = SitemapGenerator::MAX_SITEMAP_LINKS
-  SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, num)
+  SitemapGenerator::Utilities.with_warnings(nil) { SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, num) }
   yield
-  SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, original)
+  SitemapGenerator::Utilities.with_warnings(nil) { SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, original) }
 end
 
 describe "SitemapGenerator" do
