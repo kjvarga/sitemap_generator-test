@@ -29,13 +29,14 @@ describe "SitemapGenerator" do
     end
   end
 
-  describe "clean task" do
+  describe "clean task", :focus do
     before :each do
       FileUtils.touch(rails_path('public/sitemap_index.xml.gz'))
-      Helpers.invoke_task('sitemap:clean')
     end
 
     it "should delete the sitemaps" do
+      file_should_exist(rails_path('public/sitemap_index.xml.gz'))
+      Helpers.invoke_task('sitemap:clean')
       file_should_not_exist(rails_path('public/sitemap_index.xml.gz'))
     end
   end
