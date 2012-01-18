@@ -2,14 +2,14 @@
 
 # Run the specs across different rubies.
 set -o verbose
-for branch in 'rails2' 'rails3' 'standalone'
+for branch in 'plugin' 'rails2' 'rails3' 'standalone'
 do
   eval "git co ${branch}"
   echo 'Bundling...'
   RBXOPT="-Xrbc.db" rvm ree,1.9.2,1.9.3 exec bundle
-done   
+done
 echo -e 'Finished bundling.\n\n\n\n\n\n\nRunning Specs...'
-for branch in 'rails2' 'rails3' 'standalone'
+for branch in 'plugin' 'rails2' 'rails3' 'standalone'
 do
   eval "git co ${branch}"
   echo 'Running specs...'
