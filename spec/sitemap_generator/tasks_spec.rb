@@ -29,8 +29,9 @@ describe "SitemapGenerator" do
     end
   end
 
-  describe "clean task", :focus do
+  describe "clean task" do
     before :each do
+      FileUtils.mkdir_p(rails_path('public/'))
       FileUtils.touch(rails_path('public/sitemap_index.xml.gz'))
     end
 
