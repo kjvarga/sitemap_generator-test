@@ -1,9 +1,9 @@
 module SitemapMacros
   def with_max_links(num)
-    original = SitemapGenerator::MAX_SITEMAP_LINKS
-    SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, num)
+    original = ::SitemapGenerator::MAX_SITEMAP_LINKS
+    ::SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, num)
     yield
-    SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, original)
+    ::SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, original)
   end
 
   def this_root
@@ -11,15 +11,15 @@ module SitemapMacros
   end
 
   def rails_path(file)
-    SitemapGenerator.app.root + file
+    ::SitemapGenerator.app.root + file
   end
 
   def copy_sitemap_file_to_rails_app(extension)
-    FileUtils.cp(File.join(this_root, "spec/files/sitemap.#{extension}.rb"), SitemapGenerator.app.root + 'config/sitemap.rb')
+    FileUtils.cp(File.join(this_root, "spec/files/sitemap.#{extension}.rb"), ::SitemapGenerator.app.root + 'config/sitemap.rb')
   end
 
   def delete_sitemap_file_from_rails_app
-    FileUtils.remove(SitemapGenerator.app.root + 'config/sitemap.rb')
+    FileUtils.remove(::SitemapGenerator.app.root + 'config/sitemap.rb')
   rescue
     nil
   end

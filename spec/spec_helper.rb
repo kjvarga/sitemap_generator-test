@@ -1,11 +1,18 @@
+require 'fileutils'
 ENV['RAILS_ENV'] = 'test'
+
+# Update the vendored plugin
+gem_path    = File.expand_path(File.join(File.dirname(__FILE__), '../../sitemap_generator'))
+vendor_path = File.expand_path(File.join(File.dirname(__FILE__), '../vendor/plugins/sitemap_generator-1.2.3'))
+FileUtils.rm_rf(vendor_path)
+FileUtils.mkdir_p(vendor_path)
+FileUtils.cp_r(Dir.glob([File.join(gem_path, "[A-Z]*"), File.join(gem_path, "{bin,lib,rails,templates,tasks}")]), vendor_path)
+
 load(File.expand_path(File.join(File.dirname(__FILE__), '../', 'Rakefile')))
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
 Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].each {|f| require f}
-
-require 'sitemap_generator'
 
 Spec::Runner.configure do |config|
   config.include(FileMacros)
