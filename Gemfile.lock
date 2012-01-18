@@ -2,6 +2,7 @@ PATH
   remote: ../sitemap_generator
   specs:
     sitemap_generator (2.2.1)
+      builder
 
 GEM
   specs:
