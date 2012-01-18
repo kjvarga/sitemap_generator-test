@@ -2,6 +2,7 @@ require 'fileutils'
 ENV['RAILS_ENV'] = 'test'
 
 # Update the vendored plugin
+rails_root  = File.expand_path(File.join(File.dirname(__FILE__), '../'))
 gem_path    = File.expand_path(File.join(File.dirname(__FILE__), '../../sitemap_generator'))
 vendor_path = File.expand_path(File.join(File.dirname(__FILE__), '../vendor/plugins/sitemap_generator-1.2.3'))
 FileUtils.rm_rf(vendor_path)
@@ -20,8 +21,9 @@ Spec::Runner.configure do |config|
   config.include(SitemapMacros)
 
   config.after(:all) do
-    clean_sitemap_files_from_rails_app
-    copy_sitemap_file_to_rails_app(:create)
+    FileUtils.rm_rf(File.join(rails_root, 'public'))
+    FileUtils.mkdir_p(File.join(rails_root, 'public'))
+    FileUtils.cp(File.join(rails_root, "spec/files/sitemap.create.rb"), File.join(rails_root, 'config/sitemap.rb'))
   end
 
   # Pass :focus option to +describe+ or +it+ to run that spec only

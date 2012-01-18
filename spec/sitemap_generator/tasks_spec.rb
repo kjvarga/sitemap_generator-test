@@ -7,7 +7,6 @@ class Holder
 end
 
 describe "SitemapGenerator" do
-
   describe "reset!" do
     before :each do
       SitemapGenerator::Sitemap.default_host # Force initialization of the LinkSet
@@ -156,13 +155,13 @@ describe "SitemapGenerator" do
   describe "sitemap path" do
     before :each do
       clean_sitemap_files_from_rails_app
-      ::SitemapGenerator::Sitemap.reset!
-      ::SitemapGenerator::Sitemap.default_host = 'http://test.local'
-      ::SitemapGenerator::Sitemap.filename = 'sitemap'
+      SitemapGenerator::Sitemap.reset!
+      SitemapGenerator::Sitemap.default_host = 'http://test.local'
+      SitemapGenerator::Sitemap.filename = 'sitemap'
     end
 
     it "should allow changing of the filename" do
-      ::SitemapGenerator::Sitemap.create(:filename => :geo_sitemap) do
+      SitemapGenerator::Sitemap.create(:filename => :geo_sitemap) do
         add '/goerss', :geo => { :format => 'georss' }
         add '/kml', :geo => { :format => 'kml' }
       end
@@ -173,7 +172,7 @@ describe "SitemapGenerator" do
     it "should support setting a sitemap path" do
       directory_should_not_exist(rails_path('public/sitemaps/'))
 
-      sm = ::SitemapGenerator::Sitemap
+      sm = SitemapGenerator::Sitemap
       sm.sitemaps_path = 'sitemaps/'
       sm.create do
         add '/'
@@ -187,7 +186,7 @@ describe "SitemapGenerator" do
     it "should support setting a deeply nested sitemap path" do
       directory_should_not_exist(rails_path('public/sitemaps/deep/directory'))
 
-      sm = ::SitemapGenerator::Sitemap
+      sm = SitemapGenerator::Sitemap
       sm.sitemaps_path = 'sitemaps/deep/directory/'
       sm.create do
         add '/'
@@ -213,7 +212,7 @@ describe "SitemapGenerator" do
 
       it "should work outside of Rails" do
         defined?(Rails).should be_nil
-        lambda { ::SitemapGenerator::LinkSet.new }.should_not raise_exception
+        lambda { SitemapGenerator::LinkSet.new }.should_not raise_exception
       end
     end
   end
