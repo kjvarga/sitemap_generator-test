@@ -11,6 +11,12 @@ Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].e
 RSpec.configure do |config|
   config.include(FileMacros)
   config.include(XmlMacros)
+  config.include(SitemapMacros)
+
+  config.after(:all) do
+    clean_sitemap_files_from_rails_app
+    copy_sitemap_file_to_rails_app(:create)
+  end
 end
 
 module Helpers
