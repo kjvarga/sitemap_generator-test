@@ -8,9 +8,14 @@ Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].e
 require 'sitemap_generator'
 
 RSpec.configure do |config|
-  config.mock_with :mocha
   config.include(FileMacros)
   config.include(XmlMacros)
+  config.include(SitemapMacros)
+
+  config.after(:all) do
+    clean_sitemap_files_from_rails_app
+    copy_sitemap_file_to_rails_app(:create)
+  end
 
   # Pass :focus option to +describe+ or +it+ to run that spec only
   config.filter_run :focus => true
