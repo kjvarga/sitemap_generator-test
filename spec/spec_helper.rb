@@ -26,9 +26,12 @@ Spec::Runner.configure do |config|
   config.include(SitemapMacros)
 
   config.after(:all) do
-    FileUtils.rm_rf(File.join(rails_root, 'public'))
-    FileUtils.mkdir_p(File.join(rails_root, 'public'))
-    FileUtils.cp(File.join(rails_root, "spec/files/sitemap.create.rb"), File.join(rails_root, 'config/sitemap.rb'))
+    # FileUtils.rm_rf(File.join(rails_root, 'public'))
+    # FileUtils.mkdir_p(File.join(rails_root, 'public'))
+    # FileUtils.cp(File.join(rails_root, "spec/files/sitemap.create.rb"), File.join(rails_root, 'config/sitemap.rb'))
+    clean_sitemap_files_from_rails_app
+    copy_sitemap_file_to_rails_app(:create)
+    # FileUtils.rm_rf(vendor_path)
   end
 
   # Pass :focus option to +describe+ or +it+ to run that spec only
