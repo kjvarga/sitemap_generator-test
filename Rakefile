@@ -8,8 +8,8 @@ require 'sitemap_generator/tasks'
 desc 'Default: run spec tests.'
 task :default => :spec
 
-require "rspec/core/rake_task"
-RSpec::Core::RakeTask.new(:spec) do |spec|
-  spec.pattern = Dir.glob(['spec/sitemap_generator/**/*'])
-  spec.rspec_opts = ['--backtrace']
+require 'spec/rake/spectask'
+Spec::Rake::SpecTask.new do |t|
+  t.spec_opts = ['--backtrace']
+  t.spec_files = Dir.glob(['spec/sitemap_generator/**/*'])
 end

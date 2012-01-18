@@ -7,7 +7,7 @@ Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].e
 
 require 'sitemap_generator'
 
-RSpec.configure do |config|
+Spec::Runner.configure do |config|
   config.include(FileMacros)
   config.include(XmlMacros)
   config.include(SitemapMacros)
@@ -18,8 +18,8 @@ RSpec.configure do |config|
   end
 
   # Pass :focus option to +describe+ or +it+ to run that spec only
-  config.filter_run :focus => true
-  config.run_all_when_everything_filtered = true
+  # config.filter_run :focus => true
+  # config.run_all_when_everything_filtered = true
 end
 
 module Helpers
