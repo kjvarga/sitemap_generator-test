@@ -4,12 +4,17 @@ ENV['RAILS_ENV'] = 'test'
 # Update the vendored plugin
 rails_root  = File.expand_path(File.join(File.dirname(__FILE__), '../'))
 gem_path    = File.expand_path(File.join(File.dirname(__FILE__), '../../sitemap_generator'))
-vendor_path = File.expand_path(File.join(File.dirname(__FILE__), '../vendor/plugins/sitemap_generator-1.2.3'))
+vendor_path = File.expand_path(File.join(File.dirname(__FILE__), '../vendor/plugins/sitemap_generator'))
 FileUtils.rm_rf(vendor_path)
 FileUtils.mkdir_p(vendor_path)
 FileUtils.cp_r(Dir.glob([File.join(gem_path, "[A-Z]*"), File.join(gem_path, "{bin,lib,rails,templates,tasks}")]), vendor_path)
 
-load(File.expand_path(File.join(File.dirname(__FILE__), '../', 'Rakefile')))
+# Boot Rails & load tasks
+require(File.expand_path(File.join(File.dirname(__FILE__), '../config/environment')))
+require 'rake'
+require 'rake/testtask' # Needed for
+require 'rake/rdoctask' # tasks/rails
+require 'tasks/rails'
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
