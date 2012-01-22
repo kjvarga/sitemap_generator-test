@@ -15,6 +15,7 @@ require 'rake'
 require 'rake/testtask' # Needed for
 require 'rake/rdoctask' # tasks/rails
 require 'tasks/rails'
+SitemapGenerator.verbose = false
 
 # Requires supporting files with custom matchers and macros, etc,
 # in ./support/ and its subdirectories.
