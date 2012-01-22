@@ -6,6 +6,7 @@ load(File.expand_path(File.join(File.dirname(__FILE__), '../', 'Rakefile')))
 Dir[File.expand_path(File.join(File.dirname(__FILE__),'support','**','*.rb'))].each {|f| require f}
 
 require 'sitemap_generator'
+SitemapGenerator.verbose = false
 
 Spec::Runner.configure do |config|
   config.include(FileMacros)
