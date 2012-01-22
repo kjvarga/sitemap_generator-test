@@ -1,5 +1,6 @@
 require 'bundler/setup'
 Bundler.require
+SitemapGenerator.verbose = false
 
 require 'rake'
 require 'sitemap_generator/tasks'
