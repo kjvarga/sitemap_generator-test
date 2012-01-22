@@ -1,8 +1,15 @@
+require 'rubygems'
 require 'bundler/setup'
 Bundler.require
 
-SitemapGenerator::Sitemap.verbose = true
-SitemapGenerator::Sitemap.default_host = 'http://example.com'
+SitemapGenerator::Sitemap.default_host = "http://www.example.com"
 SitemapGenerator::Sitemap.create do
-  add '/ruby', :lastmod => Time.now, :changefreq => 'always', :priority => 1.0
+  add '/contents', :priority => 0.7, :changefreq => 'daily'
+
+  # add all individual articles
+  (1..10).each do |i|
+    add "/content/#{i}"
+  end
+
+  add "/merchant_path", :host => "https://www.example.com"
 end
