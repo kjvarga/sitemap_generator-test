@@ -3,6 +3,6 @@ for branch in 'plugin' 'rails2' 'rails3' 'standalone'
 do
   eval "git co ${branch}"
   echo 'Pushing...'
-	eval "git push origin master"
+	eval "git push"
 done
 eval "git co master"
