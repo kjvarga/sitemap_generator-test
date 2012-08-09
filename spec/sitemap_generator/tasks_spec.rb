@@ -84,8 +84,8 @@ describe "SitemapGenerator" do
         file_should_not_exist(rails_path('public/sitemap3.xml.gz'))
       end
 
-      it "should have 14 links" do
-        SitemapGenerator::Sitemap.link_count.should == 14
+      it "should have 13 links" do
+        SitemapGenerator::Sitemap.link_count.should == 13
       end
 
       it "index XML should validate" do
@@ -132,7 +132,7 @@ describe "SitemapGenerator" do
       file_should_not_exist(rails_path('public/fr/abc5.xml.gz'))
     end
 
-    it "should have 14 links" do
+    it "should have 13 links" do
       SitemapGenerator::Sitemap.link_count.should == 13
     end
 
