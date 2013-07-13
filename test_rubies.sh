@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# NOTE: Ruby 2.3.* needs RubyGems < 2.0 http://stackoverflow.com/questions/15349869/undefined-method-source-index-for-gemmodule-nomethoderror
+# So in effect we have to lock RubyGems at 1.8.25 for all Ruby versions: gem update --system 1.8.25
+
 # Update bundles in each environment
 set -o verbose
 for branch in 'plugin' 'rails2' 'rails3' 'standalone'
