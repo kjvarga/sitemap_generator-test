@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 
 gem 'rails', '4.0.0.rc1'
 gem 'combustion'
-gem 'nokogiri'
+gem 'nokogiri', '=1.5.10'
 gem 'rspec-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'sqlite3'

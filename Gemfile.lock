@@ -47,7 +47,7 @@ GEM
     mime-types (1.23)
     minitest (4.7.4)
     multi_json (1.7.6)
-    nokogiri (1.5.0)
+    nokogiri (1.5.10)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -103,7 +103,7 @@ PLATFORMS
 
 DEPENDENCIES
   combustion
-  nokogiri
+  nokogiri (= 1.5.10)
   rails (= 4.0.0.rc1)
   rspec-rails
   sitemap_generator!
