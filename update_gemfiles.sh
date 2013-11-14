@@ -1,5 +1,8 @@
+#!/usr/bin/env bash
+source ./env.sh
 set -o verbose
-for branch in 'plugin' 'rails2' 'rails3' 'standalone'
+
+for branch in $BRANCHES_ALL_RUBIES
 do
   eval "git co ${branch}"
   echo 'Bundling...'
@@ -7,7 +10,7 @@ do
 	eval "git add Gemfile.lock"
 	eval "git ci -m 'Updated Gemfile'"
 done
-for branch in 'rails4'
+for branch in $BRANCHES_193
 do
   eval "git co ${branch}"
   echo 'Bundling...'

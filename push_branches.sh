@@ -1,5 +1,8 @@
+#!/usr/bin/env bash
+
+source ./env.sh
 set -o verbose
-for branch in 'plugin' 'rails2' 'rails3' 'standalone' 'rails4'
+for branch in $BRANCHES
 do
   eval "git co ${branch}"
   echo 'Pushing...'
