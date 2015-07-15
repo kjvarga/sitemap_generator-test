@@ -1,8 +1,9 @@
 source 'http://rubygems.org'
 
-gem 'rails', '4.0.0.rc1'
+gem 'rails', '~>4.2.3'
+gem 'minitest' # https://github.com/rspec/rspec-rails/issues/758
 gem 'combustion'
-gem 'nokogiri', '=1.5.10'
+gem 'nokogiri'
 gem 'rspec-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'sqlite3'

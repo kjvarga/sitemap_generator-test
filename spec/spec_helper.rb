@@ -1,6 +1,6 @@
 require 'bundler/setup'
 Bundler.require
-Combustion.initialize!
+Combustion.initialize! :all
 Combustion::Application.load_tasks
 SitemapGenerator.verbose = false
 
