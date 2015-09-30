@@ -1,7 +1,7 @@
 PATH
   remote: ../sitemap_generator
   specs:
-    sitemap_generator (5.0.5)
+    sitemap_generator (5.1.0)
       builder
 
 GEM
@@ -128,3 +128,6 @@ DEPENDENCIES
   sitemap_generator!
   sqlite3
   sqlite3-ruby
+
+BUNDLED WITH
+   1.10.5
