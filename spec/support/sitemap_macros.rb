@@ -1,9 +1,10 @@
 module SitemapMacros
   def with_max_links(num)
-    original = SitemapGenerator::MAX_SITEMAP_LINKS
-    SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, num)
+    original = SitemapGenerator::Sitemap.max_sitemap_links
+    SitemapGenerator::Sitemap.max_sitemap_links = num
     yield
-    SitemapGenerator.const_set(:MAX_SITEMAP_LINKS, original)
+  ensure
+    SitemapGenerator::Sitemap.max_sitemap_links = original
   end
 
   def this_root
