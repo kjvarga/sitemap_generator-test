@@ -14,7 +14,7 @@ SitemapGenerator::Sitemap.create(
   end
 
   # Test a namer
-  group(:sitemaps_namer => SitemapGenerator::SitemapNamer.new(:abc, :start => 3)) do
+  group(:sitemaps_namer => SitemapGenerator::SimpleNamer.new(:abc, :start => 3)) do
     add '/four'
     add '/five'
     add '/six'
