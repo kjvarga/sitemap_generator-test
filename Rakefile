@@ -1,7 +1,7 @@
 require(File.join(File.dirname(__FILE__), 'config', 'boot'))
 
 require 'rake/testtask' # Needed for
-require 'rake/rdoctask' # tasks/rails
+require 'rdoc/task' # tasks/rails
 require 'tasks/rails'
 require 'sitemap_generator/tasks'
 
