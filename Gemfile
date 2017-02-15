@@ -7,7 +7,7 @@ gem 'minitest' # https://github.com/rspec/rspec-rails/issues/758
 gem 'combustion'
 gem 'nokogiri'
 gem 'rspec-rails'
-# gem 'debugger', :require => 'nil
+# gem 'debugger', :require => nil
 gem 'sqlite3'
 gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'sitemap_generator', :path => '../sitemap_generator'
