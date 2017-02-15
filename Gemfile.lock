@@ -1,8 +1,8 @@
 PATH
   remote: ../sitemap_generator
   specs:
-    sitemap_generator (4.2.0)
-      builder
+    sitemap_generator (5.3.0)
+      builder (~> 3.0)
 
 GEM
   remote: http://rubygems.org/
@@ -116,3 +116,6 @@ DEPENDENCIES
   rspec-rails
   sitemap_generator!
   sqlite3-ruby
+
+BUNDLED WITH
+   1.13.7

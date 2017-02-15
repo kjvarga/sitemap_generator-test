@@ -59,50 +59,13 @@ describe "SitemapGenerator" do
 
   describe "install multiple times" do
     before :each do
-      copy_sitemap_file_to_rails_app(:deprecated)
+      copy_sitemap_file_to_rails_app(:create)
       Helpers.invoke_task('sitemap:install')
     end
 
     it "should not overwrite config/sitemap.rb" do
-      sitemap_file = File.join(this_root, 'spec/files/sitemap.deprecated.rb')
+      sitemap_file = File.join(this_root, 'spec/files/sitemap.create.rb')
       files_should_be_identical(sitemap_file, rails_path('config/sitemap.rb'))
-    end
-  end
-
-  describe "generate sitemap with deprecated config" do
-    before :all do
-      SitemapGenerator::Sitemap.reset!
-      clean_sitemap_files_from_rails_app
-      copy_sitemap_file_to_rails_app(:deprecated)
-      with_max_links(10) { execute_sitemap_config }
-    end
-
-    it "should create sitemaps" do
-      file_should_exist(rails_path('public/sitemap_index.xml.gz'))
-      file_should_exist(rails_path('public/sitemap1.xml.gz'))
-      file_should_exist(rails_path('public/sitemap2.xml.gz'))
-      file_should_not_exist(rails_path('public/sitemap3.xml.gz'))
-    end
-
-    it "should have 13 links" do
-      SitemapGenerator::Sitemap.link_count.should == 13
-    end
-
-    it "index XML should validate" do
-      gzipped_xml_file_should_validate_against_schema rails_path('public/sitemap_index.xml.gz'), 'siteindex'
-    end
-
-    it "sitemap XML should validate" do
-      gzipped_xml_file_should_validate_against_schema rails_path('public/sitemap1.xml.gz'), 'sitemap'
-      gzipped_xml_file_should_validate_against_schema rails_path('public/sitemap2.xml.gz'), 'sitemap'
-    end
-
-    it "index XML should not have excess whitespace" do
-      gzipped_xml_file_should_have_minimal_whitespace rails_path('public/sitemap_index.xml.gz')
-    end
-
-    it "sitemap XML should not have excess whitespace" do
-      gzipped_xml_file_should_have_minimal_whitespace rails_path('public/sitemap1.xml.gz')
     end
   end
 
@@ -170,8 +133,8 @@ describe "SitemapGenerator" do
       file_should_not_exist(rails_path('public/fr/abc5.xml.gz'))
     end
 
-    it "should have 13 links" do
-      SitemapGenerator::Sitemap.link_count.should == 13
+    it "should have 16 links" do
+      SitemapGenerator::Sitemap.link_count.should == 16
     end
 
     it "index XML should validate" do
@@ -201,8 +164,8 @@ describe "SitemapGenerator" do
 
     it "should allow changing of the filename" do
       ::SitemapGenerator::Sitemap.create(:filename => :geo_sitemap) do
-        add '/goerss', :geo => { :format => 'georss' }
-        add '/kml', :geo => { :format => 'kml' }
+        add '/goerss'
+        add '/kml'
       end
       file_should_exist(rails_path('public/geo_sitemap.xml.gz'))
       file_should_not_exist(rails_path('public/geo_sitemap1.xml.gz'))
