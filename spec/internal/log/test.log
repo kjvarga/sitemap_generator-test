@@ -1,0 +1,1287 @@
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:30:21.817375"], ["updated_at", "2015-07-15 17:30:21.817375"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:30:21.821192"], ["updated_at", "2015-07-15 17:30:21.821192"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:30:21.821996"], ["updated_at", "2015-07-15 17:30:21.821996"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:30:21.822596"], ["updated_at", "2015-07-15 17:30:21.822596"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:30:21.823187"], ["updated_at", "2015-07-15 17:30:21.823187"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:30:21.823777"], ["updated_at", "2015-07-15 17:30:21.823777"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:30:21.824369"], ["updated_at", "2015-07-15 17:30:21.824369"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:30:21.824958"], ["updated_at", "2015-07-15 17:30:21.824958"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:30:21.825583"], ["updated_at", "2015-07-15 17:30:21.825583"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:30:21.826175"], ["updated_at", "2015-07-15 17:30:21.826175"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:37:42.921697"], ["updated_at", "2015-07-15 17:37:42.921697"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:37:42.925654"], ["updated_at", "2015-07-15 17:37:42.925654"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:37:42.926387"], ["updated_at", "2015-07-15 17:37:42.926387"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:37:42.926981"], ["updated_at", "2015-07-15 17:37:42.926981"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:37:42.927566"], ["updated_at", "2015-07-15 17:37:42.927566"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:37:42.928166"], ["updated_at", "2015-07-15 17:37:42.928166"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:37:42.928774"], ["updated_at", "2015-07-15 17:37:42.928774"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:37:42.929364"], ["updated_at", "2015-07-15 17:37:42.929364"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:37:42.929954"], ["updated_at", "2015-07-15 17:37:42.929954"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:37:42.930547"], ["updated_at", "2015-07-15 17:37:42.930547"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:42:07.176001"], ["updated_at", "2015-07-15 17:42:07.176001"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:42:07.181347"], ["updated_at", "2015-07-15 17:42:07.181347"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:42:07.182406"], ["updated_at", "2015-07-15 17:42:07.182406"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:42:07.183229"], ["updated_at", "2015-07-15 17:42:07.183229"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:42:07.184027"], ["updated_at", "2015-07-15 17:42:07.184027"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:42:07.184824"], ["updated_at", "2015-07-15 17:42:07.184824"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:42:07.185540"], ["updated_at", "2015-07-15 17:42:07.185540"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:42:07.186240"], ["updated_at", "2015-07-15 17:42:07.186240"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:42:07.186934"], ["updated_at", "2015-07-15 17:42:07.186934"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:42:07.187610"], ["updated_at", "2015-07-15 17:42:07.187610"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:48:30.125912"], ["updated_at", "2015-07-15 17:48:30.125912"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:48:30.130153"], ["updated_at", "2015-07-15 17:48:30.130153"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:48:30.130971"], ["updated_at", "2015-07-15 17:48:30.130971"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:48:30.131640"], ["updated_at", "2015-07-15 17:48:30.131640"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:48:30.132453"], ["updated_at", "2015-07-15 17:48:30.132453"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:48:30.133099"], ["updated_at", "2015-07-15 17:48:30.133099"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:48:30.133726"], ["updated_at", "2015-07-15 17:48:30.133726"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:48:30.134345"], ["updated_at", "2015-07-15 17:48:30.134345"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:48:30.135029"], ["updated_at", "2015-07-15 17:48:30.135029"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:48:30.135649"], ["updated_at", "2015-07-15 17:48:30.135649"]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:49:43.229988"], ["updated_at", "2015-07-15 17:49:43.229988"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:49:43.233521"], ["updated_at", "2015-07-15 17:49:43.233521"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:49:43.234465"], ["updated_at", "2015-07-15 17:49:43.234465"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:49:43.235206"], ["updated_at", "2015-07-15 17:49:43.235206"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:49:43.235854"], ["updated_at", "2015-07-15 17:49:43.235854"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:49:43.236528"], ["updated_at", "2015-07-15 17:49:43.236528"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:49:43.237189"], ["updated_at", "2015-07-15 17:49:43.237189"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:49:43.237801"], ["updated_at", "2015-07-15 17:49:43.237801"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:49:43.238394"], ["updated_at", "2015-07-15 17:49:43.238394"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:49:43.238976"], ["updated_at", "2015-07-15 17:49:43.238976"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:50:07.900989"], ["updated_at", "2015-07-15 17:50:07.900989"]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:50:07.905773"], ["updated_at", "2015-07-15 17:50:07.905773"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:50:07.906702"], ["updated_at", "2015-07-15 17:50:07.906702"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:50:07.907374"], ["updated_at", "2015-07-15 17:50:07.907374"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:50:07.908244"], ["updated_at", "2015-07-15 17:50:07.908244"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:50:07.909030"], ["updated_at", "2015-07-15 17:50:07.909030"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:50:07.909881"], ["updated_at", "2015-07-15 17:50:07.909881"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:50:07.910784"], ["updated_at", "2015-07-15 17:50:07.910784"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:50:07.911417"], ["updated_at", "2015-07-15 17:50:07.911417"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:50:07.912243"], ["updated_at", "2015-07-15 17:50:07.912243"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.5ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:51:57.737683"], ["updated_at", "2015-07-15 17:51:57.737683"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:51:57.741290"], ["updated_at", "2015-07-15 17:51:57.741290"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:51:57.742080"], ["updated_at", "2015-07-15 17:51:57.742080"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:51:57.742720"], ["updated_at", "2015-07-15 17:51:57.742720"]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:51:57.744182"], ["updated_at", "2015-07-15 17:51:57.744182"]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:51:57.745447"], ["updated_at", "2015-07-15 17:51:57.745447"]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:51:57.746697"], ["updated_at", "2015-07-15 17:51:57.746697"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:51:57.747649"], ["updated_at", "2015-07-15 17:51:57.747649"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:51:57.748488"], ["updated_at", "2015-07-15 17:51:57.748488"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:51:57.749352"], ["updated_at", "2015-07-15 17:51:57.749352"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:53:28.433652"], ["updated_at", "2015-07-15 17:53:28.433652"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:53:28.437178"], ["updated_at", "2015-07-15 17:53:28.437178"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:53:28.437979"], ["updated_at", "2015-07-15 17:53:28.437979"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:53:28.438625"], ["updated_at", "2015-07-15 17:53:28.438625"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:53:28.439222"], ["updated_at", "2015-07-15 17:53:28.439222"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:53:28.439815"], ["updated_at", "2015-07-15 17:53:28.439815"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:53:28.440405"], ["updated_at", "2015-07-15 17:53:28.440405"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:53:28.441004"], ["updated_at", "2015-07-15 17:53:28.441004"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:53:28.441601"], ["updated_at", "2015-07-15 17:53:28.441601"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:53:28.442203"], ["updated_at", "2015-07-15 17:53:28.442203"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:55:21.135116"], ["updated_at", "2015-07-15 17:55:21.135116"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:55:21.139575"], ["updated_at", "2015-07-15 17:55:21.139575"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:55:21.140413"], ["updated_at", "2015-07-15 17:55:21.140413"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:55:21.141402"], ["updated_at", "2015-07-15 17:55:21.141402"]]
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:55:21.143058"], ["updated_at", "2015-07-15 17:55:21.143058"]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:55:21.144546"], ["updated_at", "2015-07-15 17:55:21.144546"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:55:21.145657"], ["updated_at", "2015-07-15 17:55:21.145657"]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:55:21.146628"], ["updated_at", "2015-07-15 17:55:21.146628"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:55:21.147228"], ["updated_at", "2015-07-15 17:55:21.147228"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:55:21.147815"], ["updated_at", "2015-07-15 17:55:21.147815"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 17:55:43.339772"], ["updated_at", "2015-07-15 17:55:43.339772"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 17:55:43.343677"], ["updated_at", "2015-07-15 17:55:43.343677"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 17:55:43.344482"], ["updated_at", "2015-07-15 17:55:43.344482"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 17:55:43.345314"], ["updated_at", "2015-07-15 17:55:43.345314"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 17:55:43.345937"], ["updated_at", "2015-07-15 17:55:43.345937"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 17:55:43.346547"], ["updated_at", "2015-07-15 17:55:43.346547"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 17:55:43.347148"], ["updated_at", "2015-07-15 17:55:43.347148"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 17:55:43.347749"], ["updated_at", "2015-07-15 17:55:43.347749"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 17:55:43.348351"], ["updated_at", "2015-07-15 17:55:43.348351"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 17:55:43.348946"], ["updated_at", "2015-07-15 17:55:43.348946"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2015-07-15 18:15:52.632674"], ["updated_at", "2015-07-15 18:15:52.632674"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2015-07-15 18:15:52.634994"], ["updated_at", "2015-07-15 18:15:52.634994"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2015-07-15 18:15:52.635617"], ["updated_at", "2015-07-15 18:15:52.635617"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2015-07-15 18:15:52.636209"], ["updated_at", "2015-07-15 18:15:52.636209"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2015-07-15 18:15:52.636815"], ["updated_at", "2015-07-15 18:15:52.636815"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2015-07-15 18:15:52.637415"], ["updated_at", "2015-07-15 18:15:52.637415"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2015-07-15 18:15:52.638005"], ["updated_at", "2015-07-15 18:15:52.638005"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2015-07-15 18:15:52.638595"], ["updated_at", "2015-07-15 18:15:52.638595"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2015-07-15 18:15:52.639158"], ["updated_at", "2015-07-15 18:15:52.639158"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2015-07-15 18:15:52.639757"], ["updated_at", "2015-07-15 18:15:52.639757"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.9ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (2.9ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:43 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:37:43 UTC]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (2.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:53 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:37:53 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:53 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:37:53 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:53 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:37:53 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:53 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:37:53 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:53 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:37:53 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:53 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:37:53 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:53 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:37:53 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:53 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:37:53 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:54 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:37:54 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:54 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:37:54 UTC]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:37:59 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:37:59 UTC]]
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:38:11 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:38:11 UTC]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.2ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:40:43 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:40:43 UTC]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:09 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:43:09 UTC]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:16 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:43:16 UTC]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:29 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:43:29 UTC]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (2.8ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:36 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:43:36 UTC]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:43:53 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:43:53 UTC]]
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:03 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:45:03 UTC]]
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:33 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:45:33 UTC]]
+
+***** Debugger requested, but was not available (ensure ruby-debug is listed in Gemfile/installed as gem): Start server with --debugger to enable *****
+  [1m[36mContent Load (0.1ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.3ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.9ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:45:54 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:45:54 UTC]]
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:33 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:47:33 UTC]]
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 1"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 2"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 3"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 4"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 5"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 6"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 7"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 8"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 9"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", 2015-09-30 16:47:40 UTC], ["title", "content 10"], ["updated_at", 2015-09-30 16:47:40 UTC]]
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.7ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-13 23:04:26.557948"], ["updated_at", "2017-02-13 23:04:26.557948"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-13 23:04:26.579696"], ["updated_at", "2017-02-13 23:04:26.579696"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-13 23:04:26.580542"], ["updated_at", "2017-02-13 23:04:26.580542"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-13 23:04:26.581219"], ["updated_at", "2017-02-13 23:04:26.581219"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-13 23:04:26.581904"], ["updated_at", "2017-02-13 23:04:26.581904"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-13 23:04:26.582528"], ["updated_at", "2017-02-13 23:04:26.582528"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-13 23:04:26.583120"], ["updated_at", "2017-02-13 23:04:26.583120"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-13 23:04:26.583742"], ["updated_at", "2017-02-13 23:04:26.583742"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-13 23:04:26.584383"], ["updated_at", "2017-02-13 23:04:26.584383"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-13 23:04:26.585070"], ["updated_at", "2017-02-13 23:04:26.585070"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-13 23:04:59.225160"], ["updated_at", "2017-02-13 23:04:59.225160"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-13 23:04:59.246088"], ["updated_at", "2017-02-13 23:04:59.246088"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-13 23:04:59.246894"], ["updated_at", "2017-02-13 23:04:59.246894"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-13 23:04:59.247606"], ["updated_at", "2017-02-13 23:04:59.247606"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-13 23:04:59.248500"], ["updated_at", "2017-02-13 23:04:59.248500"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-13 23:04:59.249459"], ["updated_at", "2017-02-13 23:04:59.249459"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-13 23:04:59.250326"], ["updated_at", "2017-02-13 23:04:59.250326"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-13 23:04:59.251193"], ["updated_at", "2017-02-13 23:04:59.251193"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-13 23:04:59.252062"], ["updated_at", "2017-02-13 23:04:59.252062"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-13 23:04:59.252850"], ["updated_at", "2017-02-13 23:04:59.252850"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (1.1ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.7ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:22:11.107827"], ["updated_at", "2017-02-15 06:22:11.107827"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:22:11.114780"], ["updated_at", "2017-02-15 06:22:11.114780"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:22:11.115710"], ["updated_at", "2017-02-15 06:22:11.115710"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:22:11.116477"], ["updated_at", "2017-02-15 06:22:11.116477"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:22:11.117208"], ["updated_at", "2017-02-15 06:22:11.117208"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:22:11.117827"], ["updated_at", "2017-02-15 06:22:11.117827"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:22:11.118459"], ["updated_at", "2017-02-15 06:22:11.118459"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:22:11.119080"], ["updated_at", "2017-02-15 06:22:11.119080"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:22:11.119708"], ["updated_at", "2017-02-15 06:22:11.119708"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:22:11.120322"], ["updated_at", "2017-02-15 06:22:11.120322"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:25:56.536519"], ["updated_at", "2017-02-15 06:25:56.536519"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:25:56.556310"], ["updated_at", "2017-02-15 06:25:56.556310"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:25:56.557138"], ["updated_at", "2017-02-15 06:25:56.557138"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:25:56.557928"], ["updated_at", "2017-02-15 06:25:56.557928"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:25:56.558857"], ["updated_at", "2017-02-15 06:25:56.558857"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:25:56.559725"], ["updated_at", "2017-02-15 06:25:56.559725"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:25:56.560690"], ["updated_at", "2017-02-15 06:25:56.560690"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:25:56.561330"], ["updated_at", "2017-02-15 06:25:56.561330"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:25:56.561960"], ["updated_at", "2017-02-15 06:25:56.561960"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:25:56.562587"], ["updated_at", "2017-02-15 06:25:56.562587"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:26:56.375554"], ["updated_at", "2017-02-15 06:26:56.375554"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:26:56.396516"], ["updated_at", "2017-02-15 06:26:56.396516"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:26:56.397492"], ["updated_at", "2017-02-15 06:26:56.397492"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:26:56.398257"], ["updated_at", "2017-02-15 06:26:56.398257"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:26:56.398905"], ["updated_at", "2017-02-15 06:26:56.398905"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:26:56.399554"], ["updated_at", "2017-02-15 06:26:56.399554"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:26:56.400173"], ["updated_at", "2017-02-15 06:26:56.400173"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:26:56.400778"], ["updated_at", "2017-02-15 06:26:56.400778"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:26:56.401381"], ["updated_at", "2017-02-15 06:26:56.401381"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:26:56.401980"], ["updated_at", "2017-02-15 06:26:56.401980"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (0.9ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:29:47.354777"], ["updated_at", "2017-02-15 06:29:47.354777"]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:29:47.374999"], ["updated_at", "2017-02-15 06:29:47.374999"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:29:47.376242"], ["updated_at", "2017-02-15 06:29:47.376242"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:29:47.377110"], ["updated_at", "2017-02-15 06:29:47.377110"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:29:47.377973"], ["updated_at", "2017-02-15 06:29:47.377973"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:29:47.378816"], ["updated_at", "2017-02-15 06:29:47.378816"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:29:47.379598"], ["updated_at", "2017-02-15 06:29:47.379598"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:29:47.380322"], ["updated_at", "2017-02-15 06:29:47.380322"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:29:47.381031"], ["updated_at", "2017-02-15 06:29:47.381031"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:29:47.381738"], ["updated_at", "2017-02-15 06:29:47.381738"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[36m (1.0ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:30:26.710754"], ["updated_at", "2017-02-15 06:30:26.710754"]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:30:26.731495"], ["updated_at", "2017-02-15 06:30:26.731495"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:30:26.732781"], ["updated_at", "2017-02-15 06:30:26.732781"]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:30:26.733966"], ["updated_at", "2017-02-15 06:30:26.733966"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:30:26.734922"], ["updated_at", "2017-02-15 06:30:26.734922"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:30:26.735671"], ["updated_at", "2017-02-15 06:30:26.735671"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:30:26.736349"], ["updated_at", "2017-02-15 06:30:26.736349"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:30:26.737101"], ["updated_at", "2017-02-15 06:30:26.737101"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:30:26.737773"], ["updated_at", "2017-02-15 06:30:26.737773"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:30:26.738437"], ["updated_at", "2017-02-15 06:30:26.738437"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+SQLite3::SQLException: table "contents" already exists: CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:39:41.873529"], ["updated_at", "2017-02-15 06:39:41.873529"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:39:41.894902"], ["updated_at", "2017-02-15 06:39:41.894902"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:39:41.895891"], ["updated_at", "2017-02-15 06:39:41.895891"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:39:41.896574"], ["updated_at", "2017-02-15 06:39:41.896574"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:39:41.897285"], ["updated_at", "2017-02-15 06:39:41.897285"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:39:41.897866"], ["updated_at", "2017-02-15 06:39:41.897866"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:39:41.898433"], ["updated_at", "2017-02-15 06:39:41.898433"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:39:41.899004"], ["updated_at", "2017-02-15 06:39:41.899004"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:39:41.899684"], ["updated_at", "2017-02-15 06:39:41.899684"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:39:41.900302"], ["updated_at", "2017-02-15 06:39:41.900302"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+SQLite3::SQLException: table "contents" already exists: CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:40:06.659912"], ["updated_at", "2017-02-15 06:40:06.659912"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:40:06.680922"], ["updated_at", "2017-02-15 06:40:06.680922"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:40:06.681731"], ["updated_at", "2017-02-15 06:40:06.681731"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:40:06.682376"], ["updated_at", "2017-02-15 06:40:06.682376"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:40:06.682992"], ["updated_at", "2017-02-15 06:40:06.682992"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:40:06.683607"], ["updated_at", "2017-02-15 06:40:06.683607"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:40:06.684235"], ["updated_at", "2017-02-15 06:40:06.684235"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:40:06.684858"], ["updated_at", "2017-02-15 06:40:06.684858"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:40:06.685485"], ["updated_at", "2017-02-15 06:40:06.685485"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:40:06.686919"], ["updated_at", "2017-02-15 06:40:06.686919"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+SQLite3::SQLException: table "contents" already exists: CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.1ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:41:12.386561"], ["updated_at", "2017-02-15 06:41:12.386561"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:41:12.407737"], ["updated_at", "2017-02-15 06:41:12.407737"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:41:12.408516"], ["updated_at", "2017-02-15 06:41:12.408516"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:41:12.409110"], ["updated_at", "2017-02-15 06:41:12.409110"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:41:12.409704"], ["updated_at", "2017-02-15 06:41:12.409704"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:41:12.410289"], ["updated_at", "2017-02-15 06:41:12.410289"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:41:12.410879"], ["updated_at", "2017-02-15 06:41:12.410879"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:41:12.411482"], ["updated_at", "2017-02-15 06:41:12.411482"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:41:12.412168"], ["updated_at", "2017-02-15 06:41:12.412168"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:41:12.412752"], ["updated_at", "2017-02-15 06:41:12.412752"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+SQLite3::SQLException: table "contents" already exists: CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:41:53.531156"], ["updated_at", "2017-02-15 06:41:53.531156"]]
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:41:53.551405"], ["updated_at", "2017-02-15 06:41:53.551405"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:41:53.552203"], ["updated_at", "2017-02-15 06:41:53.552203"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:41:53.552768"], ["updated_at", "2017-02-15 06:41:53.552768"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:41:53.553333"], ["updated_at", "2017-02-15 06:41:53.553333"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:41:53.553907"], ["updated_at", "2017-02-15 06:41:53.553907"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:41:53.554464"], ["updated_at", "2017-02-15 06:41:53.554464"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:41:53.555194"], ["updated_at", "2017-02-15 06:41:53.555194"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:41:53.555980"], ["updated_at", "2017-02-15 06:41:53.555980"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:41:53.556856"], ["updated_at", "2017-02-15 06:41:53.556856"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+SQLite3::SQLException: table "contents" already exists: CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35mContent Load (0.2ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:42:54.903158"], ["updated_at", "2017-02-15 06:42:54.903158"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:42:54.922543"], ["updated_at", "2017-02-15 06:42:54.922543"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:42:54.923535"], ["updated_at", "2017-02-15 06:42:54.923535"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:42:54.924361"], ["updated_at", "2017-02-15 06:42:54.924361"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:42:54.925223"], ["updated_at", "2017-02-15 06:42:54.925223"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:42:54.925994"], ["updated_at", "2017-02-15 06:42:54.925994"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:42:54.926802"], ["updated_at", "2017-02-15 06:42:54.926802"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:42:54.927568"], ["updated_at", "2017-02-15 06:42:54.927568"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:42:54.928311"], ["updated_at", "2017-02-15 06:42:54.928311"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:42:54.929080"], ["updated_at", "2017-02-15 06:42:54.929080"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+SQLite3::SQLException: table "contents" already exists: CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.0ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('1')
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 1"], ["created_at", "2017-02-15 06:43:11.230836"], ["updated_at", "2017-02-15 06:43:11.230836"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 2"], ["created_at", "2017-02-15 06:43:11.252935"], ["updated_at", "2017-02-15 06:43:11.252935"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 3"], ["created_at", "2017-02-15 06:43:11.253775"], ["updated_at", "2017-02-15 06:43:11.253775"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 4"], ["created_at", "2017-02-15 06:43:11.254350"], ["updated_at", "2017-02-15 06:43:11.254350"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 5"], ["created_at", "2017-02-15 06:43:11.254929"], ["updated_at", "2017-02-15 06:43:11.254929"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 6"], ["created_at", "2017-02-15 06:43:11.255499"], ["updated_at", "2017-02-15 06:43:11.255499"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 7"], ["created_at", "2017-02-15 06:43:11.256060"], ["updated_at", "2017-02-15 06:43:11.256060"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 8"], ["created_at", "2017-02-15 06:43:11.256623"], ["updated_at", "2017-02-15 06:43:11.256623"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["title", "content 9"], ["created_at", "2017-02-15 06:43:11.257189"], ["updated_at", "2017-02-15 06:43:11.257189"]]
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.0ms)[0m  INSERT INTO "contents" ("title", "created_at", "updated_at") VALUES (?, ?, ?)  [["title", "content 10"], ["created_at", "2017-02-15 06:43:11.257764"], ["updated_at", "2017-02-15 06:43:11.257764"]]
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+SQLite3::SQLException: table "contents" already exists: CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "contents"[0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents"
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (4.4ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 1"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 2"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 3"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 4"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 5"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 6"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 7"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 8"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 9"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00], ["title", "content 10"], ["updated_at", Wed, 15 Feb 2017 06:50:50 UTC +00:00]]
+  [1m[36mContent Load (0.2ms)[0m  [1mSELECT "contents".* FROM "contents" [0m
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (1.3ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (4.6ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 1"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 2"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 3"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 4"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 5"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 6"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 7"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 8"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 9"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00], ["title", "content 10"], ["updated_at", Wed, 15 Feb 2017 06:53:18 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "contents" [0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents" 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (1.2ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (3.3ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 1"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 2"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 3"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 4"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 5"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 6"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 7"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 8"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 9"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00], ["title", "content 10"], ["updated_at", Wed, 15 Feb 2017 06:54:37 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "contents" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.1ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.0ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (0.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('1')[0m
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "contents" 
+  [1m[36mSQL (2.2ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 1"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 2"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 3"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 4"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 5"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 6"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 7"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 8"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)[0m  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 9"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "contents" ("created_at", "title", "updated_at") VALUES (?, ?, ?)  [["created_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00], ["title", "content 10"], ["updated_at", Wed, 15 Feb 2017 06:54:44 UTC +00:00]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "contents" [0m
+  [1m[35mContent Load (0.1ms)[0m  SELECT "contents".* FROM "contents" 
